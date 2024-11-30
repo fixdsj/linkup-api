@@ -59,4 +59,4 @@ jobs:
           app-name: 'linkup-web-app'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_36649E93CF2F463587AA696CED3FD5CC }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_63E5DD465D4D4CEB9BB2AA230487F9A7 }}
