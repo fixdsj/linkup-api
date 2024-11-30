@@ -28,6 +28,10 @@ app.use("/api", postRouter);
 app.use("/api", subRequestRouter);
 app.use("/api", subscriberRouter)
 
+app.get("/", (req, res) => {
+    res.send("Bienvenue sur notre linkup-api!");
+});
+
 // Vérifier la connexion à la base de données
 getDbConnection().catch((err) => {
     console.error("Erreur lors de la connexion à la base de données :", err);
