@@ -74,7 +74,7 @@ export async function login(req, res) {
     if (!passwordMatch) {
       return res.status(401).json({ error: "Email ou mot de passe invalide." });
     }
-    const token = jwt.sign({ userId: user.userId }, process.env.JWT_SECRET, { expiresIn: "1h" }
+    const token = jwt.sign({ userId: user.userId }, process.env.JWT_SECRET || "yolateam", { expiresIn: "1h" }
     );
 
     res.status(200).json({
